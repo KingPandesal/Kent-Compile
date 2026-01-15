@@ -1,6 +1,6 @@
 {
   "name": "kent-compile",
-  "displayName": "Ken't Compile",
+  "displayName": "kent-compile",
   "description": "Ken judges your code. More errors, uglier faces of Ken. CODE CAREFULLY! DELE MAG-BINOLOCC",
   "version": "0.0.1",
   "engines": {
@@ -9,15 +9,11 @@
   "categories": [
     "Other"
   ],
-  "activationEvents": [
-    "onCommand:kent-compile.openPanel",
-    "onView:kentCompile.view"
-  ],
   "main": "./dist/extension.js",
   "contributes": {
     "commands": [
       {
-        "command": "kent-compile.openPanel",
+        "command": "kentCompile.onPanel",
         "title": "Open Ken't Compile Panel"
       }
     ],
@@ -25,7 +21,8 @@
       "explorer": [
         {
           "id": "kentCompile.view",
-          "name": "Ken't Compile"
+          "name": "Ken't Compile",
+          "icon": "media/test/1.png"
         }
       ]
     },
