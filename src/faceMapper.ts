@@ -7,6 +7,7 @@ export function getFaceImage(errors: number): string {
     if (errors === 2) {return '3.jpeg';}
     if (errors === 3) {return '4.jpeg';}
     if (errors === 4) {return '5.jpeg';}
-    if (errors >= 5) {return '6.jpeg';}
-    return '7.jpeg';
+    if (errors === 5) {return '6.jpeg';}
+    if (errors >= 6) {return '7.jpeg';}
+    return '1.jpeg';
 }
