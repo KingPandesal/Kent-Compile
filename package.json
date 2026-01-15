@@ -28,6 +28,9 @@
           "name": "Ken't Compile"
         }
       ]
+    },
+    "viewsContainers": {
+      "activitybar": []
     }
   },
   "publisher": "King Kenneth",
