@@ -1,6 +1,6 @@
 # Ken't Compile (0.0.1-alpha.1)
 
-Ken judges your code. More errors, uglier faces of Ken. CODE CAREFULLY! DELE MAG-BINOLOCC
+Ken judges your code. More errors, uglier faces of Ken. CODE CAREFULLY! DELE MAG-BINOLOCC!
 
 ---
 
