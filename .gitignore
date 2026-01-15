@@ -1,0 +1,43 @@
+# Node / dependencies
+node_modules/
+
+# Build outputs
+out/
+dist/
+build/
+lib/
+
+# VS Code test / packaging
+.vscode-test/
+*.vsix
+
+# Editor / IDE
+.vscode/          # optional: commit if team settings are shared
+.idea/
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Environment / secrets
+.env
+.env.* 
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+*.log
+
+# Caches
+.cache/
+.parcel-cache/
+.eslintcache
+
+# Coverage
+coverage/
+.nyc_output/
+
+# Misc
+.history/
+.pnpm-store/
