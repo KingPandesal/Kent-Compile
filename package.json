@@ -22,7 +22,8 @@
         {
           "id": "kentCompile.view",
           "name": "Ken't Compile",
-          "icon": "media/test/1.png"
+          "icon": "media/test/1.png",
+          "type": "webview"
         }
       ]
     },
