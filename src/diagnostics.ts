@@ -6,7 +6,7 @@ export function countErrors(): number {
     for (const [, diagnostics] of vscode.languages.getDiagnostics()) {
         total += diagnostics.filter(
             d => d.severity === vscode.DiagnosticSeverity.Error
-        ).length;
+        ).length; 
     }
 
     return total;

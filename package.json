@@ -4,7 +4,7 @@
   "description": "Ken judges your code. More errors, uglier faces of Ken. CODE CAREFULLY! DELE MAG-BINOLOCC",
   "version": "0.0.1",
   "engines": {
-    "vscode": "^1.108.1"
+    "vscode": "^1.85.0"
   },
   "categories": [
     "Other"

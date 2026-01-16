@@ -1,3 +1,6 @@
+/// summary:
+/// dri nga file makita ug unsay makita sa explorer tree
+
 import * as vscode from 'vscode';
 import { countErrors } from './diagnostics';
 import { getFaceImage } from './faceMapper';

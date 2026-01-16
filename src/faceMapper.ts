@@ -1,5 +1,5 @@
-import * as vscode from 'vscode';
-import * as path from 'path';
+/// summary:
+/// dri nga file ibutang ug pila ka error ug unsa nga image ang i-return base sa error count
 
 export function getFaceImage(errors: number): string {
     if (errors === 0) {return '1.jpeg';}
