@@ -53,12 +53,38 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
                     background:#1e1e1e;
                     color:#d4d4d4;
                     font-family: sans-serif;
+                    overflow:hidden;
                 ">
-                    <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
-                        <img src="${imageUri}" style="max-width:100%; max-height:100%;" />
+                    <div style="
+                        flex:1; 
+                        display:flex; 
+                        align-items:center; 
+                        justify-content:center; 
+                        width:100%;
+                        overflow:hidden;
+                    ">
+                        <img src="${imageUri}" style="
+                            width:100%;
+                            height:100%;
+                            max-width:240px;
+                            max-height:240px;
+                            object-fit:contain;
+                            transition: all 0.15s ease;
+                        " />
                     </div>
-                    <div style="width:100%; padding:8px 12px; box-sizing:border-box; text-align:right; border-top:1px solid rgba(255,255,255,0.04);">
-                        <span style="font-size:12px; color:#9cdcfe;">errors: ${errorsText}</span>
+
+                    <div style="
+                        width:100%; 
+                        padding:4px 8px; 
+                        box-sizing:border-box; 
+                        text-align:center; 
+                        border-top:1px solid rgba(255,255,255,0.04);
+                        overflow:hidden;
+                    ">
+                        <span style="
+                            font-size:12px; 
+                            color: rgb(255,255,255);
+                        ">errors: ${errorsText}</span>
                     </div>
                 </body>
             </html>
