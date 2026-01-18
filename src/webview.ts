@@ -12,7 +12,7 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
     resolveWebviewView(view: vscode.WebviewView) {
         view.webview.options = {
             enableScripts: true,
-            localResourceRoots: [this.context.extensionUri]
+            localResourceRoots: [this.context.extensionUri] 
         };
 
         const update = () => {
@@ -28,7 +28,7 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
                     image)
             );
 
-            view.webview.html = this.getHtml(imageUri);
+            view.webview.html = this.getHtml(imageUri, errors);
         };
 
         update();
@@ -38,18 +38,28 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
         );
     }
 
-    private getHtml(imageUri: vscode.Uri): string {
+    private getHtml(imageUri: vscode.Uri, errors: number): string {
+        const errorsText = errors === 0 ? 'none' : String(errors);
+
         return `
             <html>
                 <body style="
                     margin:0;
                     display:flex;
+                    flex-direction:column;
                     justify-content:center;
                     align-items:center;
                     height:100vh;
                     background:#1e1e1e;
+                    color:#d4d4d4;
+                    font-family: sans-serif;
                 ">
-                    <img src="${imageUri}" style="max-width:100%; max-height:100%;" />
+                    <div style="flex:1; display:flex; align-items:center; justify-content:center; width:100%;">
+                        <img src="${imageUri}" style="max-width:100%; max-height:100%;" />
+                    </div>
+                    <div style="width:100%; padding:8px 12px; box-sizing:border-box; text-align:right; border-top:1px solid rgba(255,255,255,0.04);">
+                        <span style="font-size:12px; color:#9cdcfe;">errors: ${errorsText}</span>
+                    </div>
                 </body>
             </html>
         `;
