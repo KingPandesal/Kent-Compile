@@ -9,7 +9,7 @@ Ken judges your code. More errors, uglier faces of Ken. CODE CAREFULLY! DELE MAG
 1. Live Error Feedback – Automatically counts all errors in your workspace.
 
 2. Dynamic Ken Faces – Displays different images based on the number of errors:
-- 0 errors → Beautiful GORJAS Ken 
+- 0 errors → Beautiful GORJAS Ken!
 - 1 error → Cute Ken
 - 2 errors → Slightly ugly Ken
 - 5+ errors → Uglier Ken
