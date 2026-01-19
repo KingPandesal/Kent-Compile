@@ -24,7 +24,8 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
                 vscode.Uri.joinPath(
                     this.context.extensionUri, 
                     'media',
-                    'test', // ilisan ug 'kentface' if di na test
+                    'album',
+                    'tiktok-memes', // ilisan ug 'kentface' if di na test
                     image)
             );
 
@@ -39,7 +40,7 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
     }
 
     private getHtml(imageUri: vscode.Uri, errors: number): string {
-        const errorsText = errors === 0 ? 'none' : String(errors);
+        // const errorsText = errors === 0 ? 'none' : String(errors);
         const hoverText = errors === 0 ? 'No errors' : (errors === 1 ? '1 error' : `${errors} errors`);
 
         return `
