@@ -2,9 +2,9 @@
   "name": "kent-compile",
   "displayName": "Ken't Compile",
   "description": "Ken judges your code. More errors, uglier faces of Ken. CODE CAREFULLY! DELE MAG-BINOLOCC",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "engines": {
-    "vscode": "^1.85.0"
+    "vscode": "^1.108.1"
   },
   "categories": [
     "Other"
