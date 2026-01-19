@@ -1,5 +1,12 @@
 # 😤 Ken't Compile (0.0.2)
 
+![VS Code](https://img.shields.io/badge/VS%20Code-1.108.1-blue)
+![Version](https://img.shields.io/badge/version-0.0.2-orange)
+![Status](https://img.shields.io/badge/status-alpha-red)
+![Downloads](https://img.shields.io/visual-studio-marketplace/d/KingKenneth.kent-compile)
+![Rating](https://img.shields.io/visual-studio-marketplace/r/KingKenneth.kent-compile)
+![Judgment](https://img.shields.io/badge/Ken-is%20judging%20you-ff69b4)
+
 Ken judges your code. 
 More errors, uglier faces of Ken. 
 **CODE CAREFULLY! DELE MAG-BINOLOCC!**
@@ -39,7 +46,7 @@ Ken’s face changes depending on how bad your code is:
 
 ---
 
-## Screenshot
+## 📸 Screenshot
 
 **Tip:**
 - Keep your code error-free for maximum Ken approval 😏
