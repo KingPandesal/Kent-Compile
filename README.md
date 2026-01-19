@@ -27,7 +27,7 @@ If not… Ken gets progressively uglier.
 
 ### 2. 🧑‍🎨 Dynamic Ken Faces
 Ken’s face changes depending on how bad your code is:
-<br>
+<br />
 | Error Count | Ken’s Mood               |
 | ----------- | ------------------------ |
 | 0           | ✨ Beautiful, GORJAS Ken  |
@@ -64,10 +64,10 @@ Ken’s face changes depending on how bad your code is:
 4. Click **Install**
 5. Open the **Explorer panel** → find **Ken’t Compile**
 
-✅ Activate Ken’t Compile
-6. Open the **Explorer panel** → find **Ken’t Compile**
-7. Or press **Ctrl + Shift + P (Cmd + Shift + P on Mac)** to open the **Command Palette**
-8. Type **Open Ken't Compile Panel** and press **Enter**
+✅ Activate Ken’t Compile <br />
+1. Open the **Explorer panel** → find **Ken’t Compile** <br />
+2. Or press **Ctrl + Shift + P (Cmd + Shift + P on Mac)** to open the **Command Palette** <br />
+3. Type **Open Ken't Compile Panel** and press **Enter** <br />
 
 *Now Ken is watching your code in real time! 👀*
 
