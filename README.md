@@ -15,6 +15,8 @@ Ken’t Compile is a fun VS Code extension that reacts to your coding mistakes i
 If your code is clean, Ken is happy.
 If not… Ken gets progressively uglier.
 
+*Scroll down to find out how to install this extension in VS Code (Ken is watching).*
+
 ---
 
 ## ✨ Features
@@ -61,6 +63,13 @@ Ken’s face changes depending on how bad your code is:
 3. Search for **Ken’t Compile**
 4. Click **Install**
 5. Open the **Explorer panel** → find **Ken’t Compile**
+
+✅ Activate Ken’t Compile
+6. Open the **Explorer panel** → find **Ken’t Compile**
+7. Or press **Ctrl + Shift + P (Cmd + Shift + P on Mac)** to open the **Command Palette**
+8. Type **Open Ken't Compile Panel** and press **Enter**
+
+*Now Ken is watching your code in real time! 👀*
 
 ---
 
