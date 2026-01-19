@@ -120,3 +120,8 @@ Future updates may allow customizing:
 ---
 
 **Enjoy coding! Ken is watching. 👀**
+
+---
+
+## License
+This project is licensed under the MIT License. © 2026 Ken Crisostomo
