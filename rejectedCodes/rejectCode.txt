@@ -1,0 +1,18 @@
+========== webview.ts ==========
+purpose of this code:
+image
+error count
+
+<div style="
+    width:100%; 
+    padding:4px 8px; 
+    box-sizing:border-box; 
+    text-align:center; 
+    border-top:1px solid rgba(255,255,255,0.04);
+    overflow:hidden;
+">
+    <span style="
+        font-size:12px; 
+        color: rgb(255,255,255);
+    ">errors: ${errorsText}</span>
+</div>

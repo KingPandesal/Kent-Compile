@@ -40,6 +40,7 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
 
     private getHtml(imageUri: vscode.Uri, errors: number): string {
         const errorsText = errors === 0 ? 'none' : String(errors);
+        const hoverText = errors === 0 ? 'No errors' : (errors === 1 ? '1 error' : `${errors} errors`);
 
         return `
             <html>
@@ -63,7 +64,7 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
                         width:100%;
                         overflow:hidden;
                     ">
-                        <img src="${imageUri}" style="
+                        <img src="${imageUri}" title="${hoverText}" alt="Ken face — ${hoverText}" style="
                             width:100%;
                             height:100%;
                             max-width:240px;
@@ -71,20 +72,6 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
                             object-fit:contain;
                             transition: all 0.15s ease;
                         " />
-                    </div>
-
-                    <div style="
-                        width:100%; 
-                        padding:4px 8px; 
-                        box-sizing:border-box; 
-                        text-align:center; 
-                        border-top:1px solid rgba(255,255,255,0.04);
-                        overflow:hidden;
-                    ">
-                        <span style="
-                            font-size:12px; 
-                            color: rgb(255,255,255);
-                        ">errors: ${errorsText}</span>
                     </div>
                 </body>
             </html>
