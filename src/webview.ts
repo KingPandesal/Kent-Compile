@@ -17,16 +17,26 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
 
         const update = () => {
             const errors = countErrors();
-            const image = getFaceImage(errors);
 
-            // path sa images (test/kentFace)
+            // absolute path sa album folder (for fs.existsSync)
+            const albumPath = vscode.Uri.joinPath(
+                this.context.extensionUri,
+                'media',
+                'album',
+                'ken-default' // ilisan ug 'kentface' if di na test
+            ).fsPath;
+
+            const image = getFaceImage(errors, albumPath);
+
+            // convert to webview-safe URI
             const imageUri = view.webview.asWebviewUri(
                 vscode.Uri.joinPath(
-                    this.context.extensionUri, 
+                    this.context.extensionUri,
                     'media',
                     'album',
-                    'tiktok-memes', // ilisan ug 'kentface' if di na test
-                    image)
+                    'ken-default', 
+                    image
+                )
             );
 
             view.webview.html = this.getHtml(imageUri, errors);
