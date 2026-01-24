@@ -1,4 +1,7 @@
-# 😤 Ken't Compile (0.0.2)
+# 😤 Ken't Compile (1.1.1) NEW UPDATE
+Update:
+- New Mr. Incredibles Meme Album
+- Bug fixes
 
 ![VS Code](https://img.shields.io/badge/VS%20Code-1.108.1-blue)
 ![Version](https://img.shields.io/badge/version-0.0.2-orange)
