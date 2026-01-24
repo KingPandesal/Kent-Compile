@@ -19,6 +19,7 @@ If your code is clean, Ken is happy.
 If not… Ken gets progressively uglier.
 
 *Scroll down to find out how to install this extension in VS Code (Ken is watching).*
+*Scroll down to find out how to switch from one album too another in VS Code (Ken is watching).*
 
 ---
 
