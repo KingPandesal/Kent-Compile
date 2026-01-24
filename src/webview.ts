@@ -23,7 +23,7 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
                 this.context.extensionUri,
                 'media',
                 'album',
-                'ken-default' // ilisan ug 'kentface' if di na test
+                'ken-default' // ilisan ug 'ken-default' if di na test
             ).fsPath;
 
             const image = getFaceImage(errors, albumPath);
