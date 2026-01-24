@@ -7,7 +7,7 @@
 ![Rating](https://img.shields.io/visual-studio-marketplace/r/KingKenneth.kent-compile)
 ![Judgment](https://img.shields.io/badge/Ken-is%20judging%20you-ff69b4)
 
-Ken judges your code. 
+Ken judges your code.  
 More errors, uglier faces of Ken. 
 **CODE CAREFULLY! DELE MAG-BINOLOCC!**
 
@@ -120,3 +120,8 @@ Future updates may allow customizing:
 ---
 
 **Enjoy coding! Ken is watching. 👀**
+
+---
+
+## 🔑 License
+This project is licensed under the MIT License. © 2026 Ken Crisostomo
