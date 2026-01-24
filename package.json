@@ -16,6 +16,11 @@
         "command": "kentCompile.onPanel",
         "title": "Open Ken't Compile Panel"
       }
+      ,
+      {
+        "command": "kentCompile.selectAlbum",
+        "title": "Select Ken Album"
+      }
     ],
     "views": {
       "explorer": [
@@ -30,6 +35,18 @@
     "viewsContainers": {
       "activitybar": []
     }
+  ,
+  "configuration": {
+    "type": "object",
+    "title": "Ken't Compile Configuration",
+    "properties": {
+      "kentCompile.album": {
+        "type": "string",
+        "default": "ken-default",
+        "description": "Album folder name under media/album to use for Ken faces."
+      }
+    }
+  }
   },
     "publisher": "KingKenneth",
     "repository": {

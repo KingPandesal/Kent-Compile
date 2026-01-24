@@ -16,6 +16,27 @@ export function activate(context: vscode.ExtensionContext) {
 		)
 	);
 
+	const selectAlbum = vscode.commands.registerCommand('kentCompile.selectAlbum', async () => {
+		const albumUri = vscode.Uri.joinPath(context.extensionUri, 'media', 'album');
+		try {
+			const entries = await vscode.workspace.fs.readDirectory(albumUri);
+			const folders = entries.filter(([name, type]) => type === vscode.FileType.Directory).map(([name]) => name);
+			if (folders.length === 0) {
+				vscode.window.showInformationMessage('No albums found in media/album');
+				return;
+			}
+			const pick = await vscode.window.showQuickPick(folders, { placeHolder: 'Select an album for Ken faces' });
+			if (pick) {
+				await vscode.workspace.getConfiguration().update('kentCompile.album', pick, vscode.ConfigurationTarget.Global);
+				vscode.window.showInformationMessage(`Album set to ${pick}`);
+			}
+		} catch (err) {
+			vscode.window.showErrorMessage('Failed to read albums: ' + String(err));
+		}
+	});
+
+	context.subscriptions.push(selectAlbum);
+
 	// Use the console to output diagnostic information (console.log) and errors (console.error)
 	// This line of code will only be executed once when your extension is activated
 	console.log('Congratulations, your extension "Ken\'t Compile" is now active! Ken is now watching you 👀.');

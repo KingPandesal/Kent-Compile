@@ -2,6 +2,7 @@
 /// dri nga file makita ug unsay makita sa explorer tree
 
 import * as vscode from 'vscode';
+import * as fs from 'fs';
 import { countErrors } from './diagnostics';
 import { getFaceImage } from './faceMapper';
 
@@ -18,13 +19,27 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
         const update = () => {
             const errors = countErrors();
 
+            const albumName = vscode.workspace.getConfiguration().get<string>('kentCompile.album') || 'ken-default';
+
             // absolute path sa album folder (for fs.existsSync)
-            const albumPath = vscode.Uri.joinPath(
+            let albumPath = vscode.Uri.joinPath(
                 this.context.extensionUri,
                 'media',
                 'album',
-                'ken-default' // ilisan ug 'ken-default' if di na test
+                albumName
             ).fsPath;
+
+            let usedAlbum = albumName;
+            if (!fs.existsSync(albumPath)) {
+                usedAlbum = 'ken-default';
+                albumPath = vscode.Uri.joinPath(
+                    this.context.extensionUri,
+                    'media',
+                    'album',
+                    usedAlbum
+                ).fsPath;
+                vscode.window.showWarningMessage(`Album '${albumName}' not found — falling back to 'ken-default'.`);
+            }
 
             const image = getFaceImage(errors, albumPath);
 
@@ -34,7 +49,7 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
                     this.context.extensionUri,
                     'media',
                     'album',
-                    'ken-default', 
+                    usedAlbum,
                     image
                 )
             );
@@ -47,6 +62,15 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
         this.context.subscriptions.push(
             vscode.languages.onDidChangeDiagnostics(update)
         );
+
+        // update when the album configuration changes
+        const configSub = vscode.workspace.onDidChangeConfiguration(e => {
+            if (e.affectsConfiguration('kentCompile.album')) {
+                update();
+            }
+        });
+
+        this.context.subscriptions.push(configSub);
     }
 
     private getHtml(imageUri: vscode.Uri, errors: number): string {
