@@ -31,14 +31,14 @@ export class KenCompileViewProvider implements vscode.WebviewViewProvider {
 
             let usedAlbum = albumName;
             if (!fs.existsSync(albumPath)) {
-                usedAlbum = 'ken-default';
+                usedAlbum = 'Ken Default';
                 albumPath = vscode.Uri.joinPath(
                     this.context.extensionUri,
                     'media',
                     'album',
                     usedAlbum
                 ).fsPath;
-                vscode.window.showWarningMessage(`Album '${albumName}' not found — falling back to 'ken-default'.`);
+                vscode.window.showWarningMessage(`Album '${albumName}' not found — falling back to 'Ken Default'.`);
             }
 
             const image = getFaceImage(errors, albumPath);

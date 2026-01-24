@@ -36,19 +36,39 @@ Ken’s face changes depending on how bad your code is:
 | 5–9         | 😬 Very ugly Ken         |
 | 10+         | 💀 Absolutely unholy Ken |
 
-### 3. 🖼️ Webview Panel
+### 3. 🎭 Album Selection (NEW 🎉)
+Switch Ken’s personality anytime via the Command Palette:
+- Ken (Default)
+- TikTok Memes
+- Mr. Incredibles Meme
+- More albums coming soon…
+
+### 4. 🖼️ Webview Panel
 - Displays Ken’s reaction inside VS Code
 - Always watching. Always judging.
 
-### 4. 🔜 Planned Features
+### 5. 🔜 Planned Features
 - Status bar error counter
-- Face packs (memes, cats, anime, seasonal packs)
 - Custom error thresholds
 - Language-specific reactions
 
 ---
 
 ## 📸 Screenshot
+
+### Ken Album
+1. No error
+<img src="screenshots/ken-default-no-error.png" alt="Ken't Compile extension Ken Album with no error."/>
+
+2. With Error
+<img src="screenshots/ken-default-with-error.png" alt="Ken't Compile extension Ken Album with error."/>
+
+### Tiktok Memes Album
+1. No error
+<img src="screenshots/tiktok-memes-no-error.png" alt="Ken't Compile extension Tiktok Memes Album with no error."/>
+
+2. With Error
+<img src="screenshots/tiktok-memes-with-error.png" alt="Ken't Compile extension Tiktok Memes Album with error."/>
 
 **Tip:**
 - Keep your code error-free for maximum Ken approval 😏
@@ -67,9 +87,19 @@ Ken’s face changes depending on how bad your code is:
 ✅ Activate Ken’t Compile <br />
 1. Open the **Explorer panel** → find **Ken’t Compile** <br />
 2. Or press **Ctrl + Shift + P (Cmd + Shift + P on Mac)** to open the **Command Palette** <br />
-3. Type **Open Ken't Compile Panel** and press **Enter** <br />
+3. Type **"Open Ken't Compile Panel"** and press **Enter** <br />
 
 *Now Ken is watching your code in real time! 👀*
+
+---
+
+## 🎨 Select an Album
+✅ Change Ken’s reaction style (faces, memes, cats, anime, etc.)
+1. Press **Ctrl + Shift + P (Cmd + Shift + P on Mac)** to open the **Command Palette**
+2. Type **"Select Ken Album"** and press **Enter**
+3. **Choose** your desired album and ENJOY!
+
+✨ Ken will immediately switch personalities based on your selection.
 
 ---
 
@@ -98,11 +128,12 @@ Future updates may allow customizing:
 
 ## 📝 Release Notes
 
-**0.0.2**
-- Initial release of Ken't Compile
+**1.0.0**
+- Official release of Ken't Compile
 - Live error counting
 - Dynamic Ken faces based on error count
 - Explorer Webview integration
+- Album selection
 
 ---
 
